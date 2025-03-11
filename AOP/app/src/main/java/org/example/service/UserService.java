@@ -12,5 +12,26 @@ public class UserService {
         private String name;
         private int age;
         private String address;
+
+        public User(String name, int age, String address) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+    }
+
+    private User user;
+
+    public UserService() {
+        User user = new User("Iftikar Hussain", 22, "India, Assam");
+    }
+
+    public void logIn() {
+        System.out.println("Logged user in");
+    }
+
+    public void logOut() throws Exception {
+        System.out.println("Logging user out");
+        throw new Exception("Unable to logout the user");
     }
 }
