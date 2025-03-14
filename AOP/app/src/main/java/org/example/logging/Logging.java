@@ -16,6 +16,6 @@ public class Logging {
 
     @After("execution(public void org.example.service.UserService.logIn())")
     public void loggingAdvice2() {
-        System.out.println("Runnin After Advice for logIn");
+        System.out.println("Running After Advice for logIn");
     }
 }
